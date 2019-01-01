@@ -31,7 +31,6 @@ TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # noqa F405
 
 # EMAIL
 # ------------------------------------------------------------------------------
-=======
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-host
 EMAIL_HOST = env('EMAIL_HOST', default='mailhog')
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-port
