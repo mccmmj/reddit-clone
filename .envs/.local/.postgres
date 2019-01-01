@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=reddit
+POSTGRES_USER=uSLjwpgfXjjmcFlqxyqXdatPWNPDNHlV
+POSTGRES_PASSWORD=fpHr5RIgSGpixjWB13wQgkZMvNBxSsrT3FOmLBbJnzd6sCcqpXpxz449l03QHgr0
