@@ -12,6 +12,7 @@ services:
     image: reddit_local_django
     depends_on:
       - postgres
+      - mailhog
     volumes:
       - .:/app
     env_file:
@@ -32,6 +33,11 @@ services:
     env_file:
       - ./.envs/.local/.postgres
 
+  mailhog:
+    image: mailhog/mailhog:v1.0.0
+    ports:
+      - "8025:8025"
+
   redis:
     image: redis:3.2
 
@@ -41,7 +47,7 @@ services:
     depends_on:
       - redis
       - postgres
-      
+      - mailhog
     ports: []
     command: /start-celeryworker
 
@@ -51,7 +57,7 @@ services:
     depends_on:
       - redis
       - postgres
-      
+      - mailhog
     ports: []
     command: /start-celerybeat
 

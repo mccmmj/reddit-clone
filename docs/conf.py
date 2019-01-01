@@ -240,7 +240,7 @@ texinfo_documents = [
         "Reddit Clone Documentation",
         """Jerry McCommas""",
         "Reddit Clone",
-        """A reddit clone""",
+        """A Reddit Clone""",
         "Miscellaneous",
     )
 ]
